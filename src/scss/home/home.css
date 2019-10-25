@@ -1,0 +1,237 @@
+@charset "UTF-8";
+.middle .fullbanner figure {
+  width: 100%;
+  height: 520px;
+}
+
+.middle .infosbar {
+  margin-top: -55px;
+  width: 100%;
+  text-align: center;
+}
+
+.middle h2 {
+  position: relative;
+  width: 100%;
+  margin: 35px 0;
+}
+
+.middle h2 span {
+  font-size: 28px;
+  font-family: "Arial";
+  color: #606060;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding-right: 25px;
+}
+
+.middle h2:after {
+  content: "";
+  background-color: #606060;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+.middle .top-sales-list {
+  display: flex;
+  justify-content: space-between;
+  /* the parent */
+}
+
+.middle .top-sales-list .slick-slide {
+  margin: 0 10px;
+}
+
+.middle .top-sales-list .slick-list {
+  margin: 0 -10px;
+}
+
+.middle .top-sales-list .slick-prev,
+.middle .top-sales-list .slick-next {
+  width: 52px;
+  height: 52px;
+  font-size: 0;
+}
+
+.middle .top-sales-list .slick-prev:before,
+.middle .top-sales-list .slick-next:before {
+  display: none;
+}
+
+.middle .top-sales-list .slick-prev {
+  background-image: url(../../assets/img/btn-prev.png);
+  left: -28px;
+}
+
+.middle .top-sales-list .slick-next {
+  background-image: url(../../assets/img/btn-next.png);
+  right: -28px;
+}
+
+.middle .top-sales-list .product {
+  width: 24%;
+  border: 1px solid #dbdbdb;
+  padding: 24px;
+  position: relative;
+}
+
+.middle .top-sales-list .product .photo {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.middle .top-sales-list .product h3 a {
+  font-size: 14px;
+  font-family: "Arial";
+  color: #404040;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  padding: 0 20px;
+  display: block;
+}
+
+.middle .top-sales-list .product .box-price {
+  padding: 0 20px;
+}
+
+.middle .top-sales-list .product .box-price .price {
+  font-size: 24px;
+  font-family: "Arial";
+  color: #ca9e6d;
+  font-weight: bold;
+  line-height: 0.583;
+}
+
+.middle .top-sales-list .product .box-price .method-others,
+.middle .top-sales-list .product .box-price .method {
+  font-size: 12px;
+  font-family: "Arial";
+  color: #404040;
+  line-height: 1.467;
+}
+
+.middle .top-sales-list .product .btn {
+  border-width: 2px;
+  border-color: #48a364;
+  border-style: solid;
+  width: 178px;
+  height: 42px;
+  line-height: 40px;
+  background: transparent;
+  transition: all 0.2s ease;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Arial";
+  color: #48a364;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.middle .top-sales-list .product .btn:hover {
+  background-color: #48a364;
+  color: #fff;
+}
+
+.middle .top-sales-list .product.flag:before {
+  content: "Flag";
+  height: 24px;
+  width: 125px;
+  display: block;
+  background: #bbb;
+  left: -5;
+  top: 15px;
+  position: absolute;
+  font-size: 12px;
+  font-family: "Arial";
+  color: white;
+  text-transform: uppercase;
+  line-height: 24px;
+  text-align: center;
+}
+
+.middle .top-sales-list .product.flag:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 5px 0;
+  border-color: transparent #aaa transparent transparent;
+  left: -5;
+  top: 39px;
+  position: absolute;
+}
+
+.middle .top-sales-list .product.flag.promo:before {
+  content: "PROMOÇÃO";
+  background-color: #de721a;
+}
+
+.middle .top-sales-list .product.flag.promo:after {
+  border-color: transparent #c4600f transparent transparent;
+}
+
+.middle .top-sales-list .product.flag.new:before {
+  content: "LANÇAMENTO";
+  background-color: #0fa4e9;
+}
+
+.middle .top-sales-list .product.flag.new:after {
+  border-color: transparent #138dc6 transparent transparent;
+}
+
+.middle .top-sales-list .product.flag.frete:before {
+  content: "FRETE GRÁTIS";
+  background-color: #48a364;
+}
+
+.middle .top-sales-list .product.flag.frete:after {
+  border-color: transparent #3d8954 transparent transparent;
+}
+
+.middle .gallery-banners {
+  margin-top: 50px;
+}
+
+.middle .gallery-banners .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "banner1 banner2 banner2 banner3" "banner1 banner4 banner5 banner6";
+}
+
+.middle .gallery-banners .banner1 {
+  grid-area: banner1;
+}
+
+.middle .gallery-banners .banner3 {
+  grid-area: banner3;
+  margin-bottom: 20px;
+}
+
+.middle .gallery-banners .banner4 {
+  grid-area: banner4;
+}
+
+.middle .gallery-banners .banner5 {
+  grid-area: banner5;
+}
+
+.middle .gallery-banners .banner6 {
+  grid-area: banner6;
+}
+
+.middle .gallery-banners .banner2 {
+  grid-area: banner2;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}

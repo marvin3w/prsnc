@@ -1,0 +1,239 @@
+// #############
+// Home
+
+.middle {
+  #content {
+  }
+  .fullbanner {
+    figure {
+      width: 100%;
+      height: 520px;
+    }
+  }
+  .infosbar {
+    margin-top: -55px;
+    width: 100%;
+    text-align: center;
+    img {
+    }
+  }
+  .top-sales {
+  }
+  .wrap {
+  }
+  h2 {
+    position: relative;
+    width: 100%;
+    margin: 35px 0;
+    span {
+      font-size: 28px;
+      font-family: "Arial";
+      color: rgb(96, 96, 96);
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: #fff;
+      padding-right: 25px;
+    }
+    &:after {
+      content: "";
+      background-color: #606060;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  .top-sales-list {
+    display: flex;
+    justify-content: space-between;
+
+    .slick-slide {
+      margin: 0 10px;
+    }
+    /* the parent */
+    .slick-list {
+      margin: 0 -10px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 52px;
+      height: 52px;
+      font-size: 0;
+      &:before {
+        display: none;
+      }
+    }
+    .slick-prev {
+      background-image: url(../../assets/img/btn-prev.png);
+      left: -28px;
+    }
+
+    .slick-next {
+      background-image: url(../../assets/img/btn-next.png);
+      right: -28px;
+    }
+
+    .product {
+      width: 24%;
+      border: 1px solid #dbdbdb;
+      padding: 24px;
+      position: relative;
+      .photo {
+        display: block;
+        margin-bottom: 15px;
+      }
+      h3 {
+        a {
+          font-size: 14px;
+          font-family: "Arial";
+          color: rgb(64, 64, 64);
+          font-weight: bold;
+          text-transform: uppercase;
+          line-height: 1.2;
+          margin-bottom: 18px;
+          padding: 0 20px;
+          display: block;
+        }
+      }
+      .box-price {
+        padding: 0 20px;
+        .price {
+          font-size: 24px;
+          font-family: "Arial";
+          color: rgb(202, 158, 109);
+          font-weight: bold;
+          line-height: 0.583;
+        }
+        .method-others,
+        .method {
+          font-size: 12px;
+          font-family: "Arial";
+          color: rgb(64, 64, 64);
+          line-height: 1.467;
+        }
+      }
+      .btn {
+        border-width: 2px;
+        border-color: rgb(72, 163, 100);
+        border-style: solid;
+        width: 178px;
+        height: 42px;
+        line-height: 40px;
+        background: transparent;
+        transition: all 0.2s ease;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Arial";
+        color: rgb(72, 163, 100);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 20px;
+
+        &:hover {
+          background-color: rgb(72, 163, 100);
+          color: #fff;
+        }
+        span {
+        }
+      }
+      &.flag {
+        &:before {
+          content: "Flag";
+          height: 24px;
+          width: 125px;
+          display: block;
+          background: #bbb;
+          left: -5;
+          top: 15px;
+          position: absolute;
+
+          font-size: 12px;
+          font-family: "Arial";
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          line-height: 24px;
+          text-align: center;
+        }
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 5px 5px 0;
+          border-color: transparent #aaa transparent transparent;
+          left: -5;
+          top: 39px;
+          position: absolute;
+        }
+        &.promo {
+          &:before {
+            content: "PROMOÇÃO";
+            background-color: #de721a;
+          }
+          &:after {
+            border-color: transparent #c4600f transparent transparent;
+          }
+        }
+        &.new {
+          &:before {
+            content: "LANÇAMENTO";
+            background-color: #0fa4e9;
+          }
+          &:after {
+            border-color: transparent #138dc6 transparent transparent;
+          }
+        }
+        &.frete {
+          &:before {
+            content: "FRETE GRÁTIS";
+            background-color: #48a364;
+          }
+          &:after {
+            border-color: transparent #3d8954 transparent transparent;
+          }
+        }
+      }
+    }
+  }
+  .gallery-banners {
+    margin-top: 50px;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "banner1 banner2 banner2 banner3" "banner1 banner4 banner5 banner6";
+    }
+
+    .banner1 {
+      grid-area: banner1;
+    }
+
+    .banner3 {
+      grid-area: banner3;
+      margin-bottom: 20px;
+    }
+
+    .banner4 {
+      grid-area: banner4;
+    }
+
+    .banner5 {
+      grid-area: banner5;
+    }
+
+    .banner6 {
+      grid-area: banner6;
+    }
+
+    .banner2 {
+      grid-area: banner2;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
